@@ -1,10 +1,9 @@
-var swiper = new Swiper(".slider", {
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    
-    pagination: {
-      el: ".swiper-pagination",
-    },
+$(document).ready(()=>{
+    $("#hamburger").on("click", ()=>{
+        $(".menu_nav").toggleClass("show");
+    });
+
+    $(".nav_link").on("click", ()=>{
+        $(".menu_nav").removeClass("show");
+    });
 });

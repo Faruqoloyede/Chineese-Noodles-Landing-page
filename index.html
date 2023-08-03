@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!--=====SWIPER LINK=====-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
     <!--=====CSS LINK=====-->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,10 +30,10 @@
                     <li class="nav_item"><a href="#contact" class="nav_link">LOCATION</a></li>
                 </ul>
             </div>
-            <div class="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
             <button type="button" class="sign_up">SIGN UP</button>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars" id="hamburger"></i>
+            </div>
         </nav>
     </header>
     <!--=====HERO SECTION=====-->
@@ -285,13 +287,13 @@
         <div class="footer_details container">
             <div class="footer_content grid">
                 <a href="#" class="logo">CHINEES<br>NOODLE</a>
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="#" class="nav_link">HOME</a></li>
-                    <li class="nav_item"><a href="#menu" class="nav_link">MENU</a></li>
-                    <li class="nav_item"><a href="#order" class="nav_link">ORDER</a></li>
-                    <li class="nav_item"><a href="#categories" class="nav_link">CATEGORIES</a></li>
-                    <li class="nav_item"><a href="#about" class="nav_link">ABOUT</a></li>
-                    <li class="nav_item"><a href="#contact" class="nav_link">LOCATION</a></li>
+                <ul class="footer_nav_list">
+                    <li class="footer_nav_item"><a href="#" class="footer_nav_link">HOME</a></li>
+                    <li class="footer_nav_item"><a href="#menu" class="footer_nav_link">MENU</a></li>
+                    <li class="footer_nav_item"><a href="#order" class="footer_nav_link">ORDER</a></li>
+                    <li class="footer_nav_item"><a href="#categories" class="footer_nav_link">CATEGORIES</a></li>
+                    <li class="footer_nav_item"><a href="#about" class="footer_nav_link">ABOUT</a></li>
+                    <li class="footer_nav_item"><a href="#contact" class="footer_nav_link">LOCATION</a></li>
                 </ul>
                 <div class="newsletter">
                     <h3>SUBSCRIBE TO OUR NEWSLETTER</h3>
@@ -306,6 +308,23 @@
     </footer>
     <!--=====SWIPER=====-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!--=====SCRIPT LINK=====-->
     <script src="assets/js/app.js"></script>
+    <!--=====JQUERY LINK -->
+
+    <!--=====SWIPER PAGINATION -->
+    <script>
+        var swiper = new Swiper(".slider", {
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+    
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+    </script>
 </body>
 </html>
